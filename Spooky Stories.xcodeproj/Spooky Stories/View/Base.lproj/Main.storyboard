@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Spooky_Stories" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tree" translatesAutoresizingMaskIntoConstraints="NO" id="69s-ud-18H">
+                                <rect key="frame" x="0.0" y="-64" width="414" height="960"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Horror Manor. You are greeted by the groundskeeper and he goes to shake your hand, what do you do?" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hm5-Up-B48">
+                                <rect key="frame" x="20" y="229" width="374" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="fGd-a1-O3B"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xwJ-o3-aYA">
+                                <rect key="frame" x="109" y="551" width="197" height="60"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hpo-7a-ePe"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gCG-1d-VfN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="i9j-2C-4rP">
+                                <rect key="frame" x="109" y="661" width="197" height="60"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="XCo-E2-QxL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceMade:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XrS-gR-MmE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="i9j-2C-4rP" firstAttribute="width" secondItem="xwJ-o3-aYA" secondAttribute="width" id="5x7-VL-ezH"/>
+                            <constraint firstItem="i9j-2C-4rP" firstAttribute="height" secondItem="xwJ-o3-aYA" secondAttribute="height" id="7Kk-LM-MG4"/>
+                            <constraint firstItem="hm5-Up-B48" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="8Re-wa-pGl"/>
+                            <constraint firstAttribute="bottom" secondItem="69s-ud-18H" secondAttribute="bottom" id="BBh-CB-sNd"/>
+                            <constraint firstItem="i9j-2C-4rP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="BWs-BO-4LY"/>
+                            <constraint firstItem="hm5-Up-B48" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="185" id="J6p-W8-DaU"/>
+                            <constraint firstItem="69s-ud-18H" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="LoQ-V1-lOy"/>
+                            <constraint firstItem="xwJ-o3-aYA" firstAttribute="top" secondItem="hm5-Up-B48" secondAttribute="bottom" constant="200" id="cFa-gd-nWs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xwJ-o3-aYA" secondAttribute="trailing" constant="131" id="cat-2x-wHR"/>
+                            <constraint firstItem="69s-ud-18H" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ejl-kR-fKV"/>
+                            <constraint firstItem="xwJ-o3-aYA" firstAttribute="top" secondItem="hm5-Up-B48" secondAttribute="bottom" constant="250" id="mdg-gv-19V"/>
+                            <constraint firstItem="69s-ud-18H" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="-64" id="qE7-6U-5EP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i9j-2C-4rP" secondAttribute="trailing" constant="131" id="t92-vs-XIq"/>
+                            <constraint firstItem="i9j-2C-4rP" firstAttribute="top" secondItem="xwJ-o3-aYA" secondAttribute="bottom" constant="50" id="wj4-Zx-J9v"/>
+                            <constraint firstItem="xwJ-o3-aYA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="wx3-cs-NWz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hm5-Up-B48" secondAttribute="trailing" constant="20" id="zRM-bR-Sqm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="StoryLabel" destination="hm5-Up-B48" id="jnK-2u-Ozf"/>
+                        <outlet property="choice1" destination="xwJ-o3-aYA" id="puj-72-M3G"/>
+                        <outlet property="choice2" destination="i9j-2C-4rP" id="rw8-IW-V8R"/>
+                        <outlet property="storyLabel" destination="hm5-Up-B48" id="VGh-HV-vM7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tree" width="640" height="960"/>
+    </resources>
+</document>
